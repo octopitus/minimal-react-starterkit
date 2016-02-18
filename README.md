@@ -1,4 +1,4 @@
-> A minimal skeleton React starter kit
+> A minimal starter kit for building React apps
 
 ## Why another boilerplate?
 
