@@ -7,8 +7,9 @@
     "build:webpack": "NODE_ENV=production webpack -p --config webpack.config.prod.js",
     "build": "npm run clean && npm run build:webpack",
     "start": "node bin/dev.js",
-    "lint": "eslint src --ext .js || true",
-    "lint:fix": "eslint src --ext .js --fix || true"
+    "test": "NODE_ENV=testing ava --fail-fast --verbose --require=babel-register --require=css-loader",
+    "lint": "eslint src --ext .js",
+    "lint:fix": "eslint src --ext .js --fix"
   },
   "repository": {
     "type": "git",
@@ -27,6 +28,7 @@
   "homepage": "https://github.com/octopitus/re-starter",
   "devDependencies": {
     "autoprefixer": "^6.3.3",
+    "ava": "^0.12.0",
     "babel-core": "^6.3.17",
     "babel-eslint": "^5.0.0-beta6",
     "babel-loader": "^6.2.0",
@@ -39,6 +41,7 @@
     "babel-register": "^6.3.13",
     "babel-runtime": "^6.3.19",
     "css-loader": "^0.23.1",
+    "enzyme": "^2.0.0",
     "eslint": "^2.0.0-rc.1",
     "eslint-config-standard": "^5.1.0",
     "eslint-config-standard-react": "^2.3.0",
