@@ -1,5 +1,12 @@
 > Inspired by [essential-react](https://github.com/pheuter/essential-react)
 
+## Why another boilerplate?
+
+Because many projects out there depends on too much technologies, complex structure and with lots of things to care about.
+This starter kit aims to give you a good starting point for your projects. No specific implementation of Flux, no data fetching patterns
+or universal things inside. **Start small, add what you need.**
+>>>>>>> 92c4edf558d7f18b1884a59a56b6ad7fcab625bf
+
 ## Features
 - Include few tools.
 - Babel 6 with Webpack and Hot Loader.
