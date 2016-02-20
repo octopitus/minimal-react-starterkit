@@ -1,15 +1,11 @@
 > Inspired by [essential-react](https://github.com/pheuter/essential-react)
 
-## Why another boilerplate?
-
-Because many projects out there depends on too much technologies, complex structure and with lots of things to care about.
-This starter kit aims to give you a good starting point for your projects. No specific implementation of Flux, no data fetching patterns
-or universal things inside. **Start small, add what you need.**
-
 ## Features
-- Include few tools.
-- Babel 6 with Webpack and Hot Loader.
+- Include few tools (No bower, no gulp, etc...).
+- Babel 6 with Webpack and Hot Loader using [react-transform-hmr](https://github.com/gaearon/react-transform-hmr).
+- No specific implementation of Flux, no data fetching patterns or universal things inside.
 - CSS processing with PostCSS.
+- Fast testing with mocked-out DOM.
 
 ## Getting started
 
@@ -45,7 +41,7 @@ Linting using `eslint` with standard rules and React plugin.
 npm run lint:fix
 ```
 
-Fixes linter's common issues ([Learn more](http://eslint.org/docs/user-guide/command-line-interface.html#fix)).
+Fixes common issues ([Learn more](http://eslint.org/docs/user-guide/command-line-interface.html#fix)).
 
 ### Test
 
@@ -53,7 +49,8 @@ Fixes linter's common issues ([Learn more](http://eslint.org/docs/user-guide/com
 npm run test
 ```
 
-[ava](https://github.com/sindresorhus/ava) is used as a unit testing framework.
+Uses [ava](https://github.com/sindresorhus/ava) as test runner and uses [enzyme](https://github.com/airbnb/enzyme)
+for testing your React components easier.
 
 ## License
 
