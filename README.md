@@ -1,10 +1,4 @@
-> A minimal skeleton React starter kit
-
-## Why another boilerplate?
-
-Because many projects out there depends on too much technologies, complex structure and with lots of things to care about.
-This starter kit aims to give you a good starting point for your projects. No specific implementation of Flux, no data fetching patterns
-or universal things inside. **Start small, add what you need.**
+> Inspired by [essential-react](https://github.com/pheuter/essential-react)
 
 ## Features
 - Include few tools.
@@ -23,8 +17,7 @@ npm install
 npm start # Navigate to localhost:3000 to view the app
 ```
 
-This leverages [react-transform-hmr](https://github.com/gaearon/react-transform-hmr) to automatically start a local dev server and refresh file changes on the fly without reloading the page.
-It also automatically includes source maps, allowing you to browse code and set breakpoints on the original code.
+Start a local dev server and refresh file changes on the fly without reloading the page. Even with CSS.
 
 ### Deploy to production
 
@@ -32,7 +25,7 @@ It also automatically includes source maps, allowing you to browse code and set 
 npm run build
 ```
 
-Remove old build, runs linter, and then, if success, compiles your application to `dist`. You can just serve this folder and you are good to go.
+Compiles your application to `dist` folder. You can just serve this folder and you are good to go.
 
 ### Linting
 
@@ -40,7 +33,7 @@ Remove old build, runs linter, and then, if success, compiles your application t
 npm run lint
 ```
 
-Linting using `eslint` with standard rules and with React plugin.
+Linting using `eslint` with standard rules and React plugin.
 
 ```bash
 npm run lint:fix
@@ -50,7 +43,11 @@ Fixes linter's common issues ([Learn more](http://eslint.org/docs/user-guide/com
 
 ### Test
 
-> Will also be included
+```bash
+npm run test
+```
+
+[ava](https://github.com/sindresorhus/ava) is used as a unit testing framework.
 
 ## License
 
